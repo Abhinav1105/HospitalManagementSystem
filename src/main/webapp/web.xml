@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+    http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd" version="3.1">
+    <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>jstl</artifactId>
+            <version>-1.2</version>
+        </dependency>
+ 
+  <display-name>Shopping Cart</display-name>
+  <description>
+    Simple Shopping Cart
+  </description>
+ 
+  <servlet>
+    <servlet-name>CartController</servlet-name>
+    <servlet-class>in.techfreaks.shoppingcart.servlet.CartController</servlet-class>
+  </servlet>
+ 
+  <!-- Define the Manager Servlet Mapping -->
+  <servlet-mapping>
+    <servlet-name>CartController</servlet-name>
+      <url-pattern>/servlet/*</url-pattern>
+  </servlet-mapping>
+ 
+</web-app>
